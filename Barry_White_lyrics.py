@@ -10,7 +10,7 @@ soup = bs4.BeautifulSoup(res.text)
 list_url = []
 soup.prettify()
 for anchor in soup.findAll('a', href=True):
-    if anchor['href'][:13] == "/lyrics/barry":
+    if str("/lyrics/barry") in anchor['href'][:20]:
         list_url.append(anchor['href'])
 
 ### go through each url of the list & grab lyrics
