@@ -1,8 +1,3 @@
-
-# coding: utf-8
-
-# In[20]:
-
 ### grab all urls from barry white's lyrics
 import requests
 import re
@@ -40,9 +35,3 @@ text_model = markovify.Text(text, state_size=3)
 for i in range(5):
     if lyrics != None:
         print(text_model.make_sentence())
-
-
-# In[ ]:
-
-
-
